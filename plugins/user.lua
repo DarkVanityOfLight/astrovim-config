@@ -14,5 +14,18 @@ return {
     lazy = false,
     priority = 1000,
     opts = {}
-  }
+  },
+
+  {
+    "elkowar/yuck.vim",
+    lazy = false,
+  },
+
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    config = function()
+      require("catppuccin").setup { flavour = "mocha" }
+    end,
+  },
 }
